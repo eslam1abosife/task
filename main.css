@@ -1,0 +1,141 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+input {
+  outline: none;
+}
+.task {
+  width: 550px;
+  margin: auto;
+  background-color: white;
+  padding: 40px;
+}
+.task .head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.task form {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: -2px -2px 5px #1d1c1c, 2px 2px 5px #1d1c1c;
+  border: 2px solid #1d1c1c;
+}
+.task form .intxt {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.task form .intxt .selec {
+  background-color: white;
+  outline: none;
+  border: 1px solid black;
+  width: 100px;
+  font-size: 17px;
+}
+.task form .intxt label {
+  font-size: 20px;
+}
+.task form h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.task form input[type="submit"] {
+  padding: 10px;
+  font-size: 25px;
+  color: white;
+  background-color: black;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+}
+.msg {
+  width: 550px;
+  margin: auto;
+  padding: 40px;
+  display: none;
+}
+.msg .head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.msg .tecket {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: -2px -2px 5px #1d1c1c, 2px 2px 5px #1d1c1c;
+  border: 2px solid #1d1c1c;
+}
+.msg .tecket h3 {
+  text-align: center;
+}
+.msg .tecket table {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+form #errors {
+  text-align: center;
+  margin-bottom: 40px;
+  color: red;
+}
+@media (max-width: 768px) {
+  .task {
+    width: 350px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+  }
+  .task form .intxt label {
+    font-size: 16px;
+  }
+  .msg {
+    width: 390px;
+    padding: 10px;
+  }
+  .msg .tecket {
+    padding: 15px;
+  }
+  .msg .tecket table {
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 420px) {
+  .task {
+    width: 270px;
+    margin: auto;
+    background-color: white;
+    padding: 5px;
+  }
+  .task form {
+    padding: 15px;
+  }
+  .task form .intxt label {
+    font-size: 13px;
+  }
+  .task form .intxt input {
+    width: 50%;
+  }
+  .msg {
+    width: 290px;
+    padding: 5px;
+  }
+  .msg .tecket {
+    padding: 15px;
+  }
+  .msg .tecket table {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .task form .intxt .selec {
+    width: 70px;
+    font-size: 17px;
+  }
+}
